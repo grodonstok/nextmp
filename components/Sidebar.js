@@ -17,7 +17,7 @@ function Sidebar() {
 				<SidebarItem title="Pools" Icon={HomeIcon} page="home" />
 				<SidebarItem title="My shares" Icon={HomeIcon} page="home" />
 			</div>
-			<ConnectButton />
+			<ConnectButton title="Connect"/>
 		</div>
 	)
 }
