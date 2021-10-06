@@ -4,6 +4,7 @@ import icon_setting from "../assets/icon_setting.svg";
 import icon_history from "../assets/icon_history.svg";
 import ExchangeSettingModal from "./ExchangeSettingModal";
 import ExchangeTransactionsModal from "./ExchangeTransactionsModal";
+import Dropdown from "./Dropdown";
 
 function ExchangeTrade() {
   const [modal, showModal] = useState(null);
@@ -23,8 +24,16 @@ function ExchangeTrade() {
       <div className="flex justify-between sm:hidden">
         <span>Exchange</span>
         <div className="flex gap-5">
-          <img className="w-4 cursor-pointer" src={icon_setting} onClick={() => showModal('setting')} />
-          <img className="w-4 cursor-pointer" src={icon_history} onClick={() => showModal('history')} />
+          <img
+            className="w-4 cursor-pointer"
+            src={icon_setting}
+            onClick={() => showModal("setting")}
+          />
+          <img
+            className="w-4 cursor-pointer"
+            src={icon_history}
+            onClick={() => showModal("history")}
+          />
         </div>
       </div>
       <div className="flex flex-col sm:flex-row bg-[#2A3A5F] justify-between p-10 rounded-2xl gap-5">
@@ -37,7 +46,7 @@ function ExchangeTrade() {
         </div>
         <div className="flex flex-1 flex-col sm:gap-3">
           <p className="font-light">Balance: 0.396</p>
-          <p className="font-bold text-lg cursor-pointer">BNB (drop)</p>
+          <Dropdown title="Select Currency" items={["BNB", "BUSD", "WBNB"]} />
         </div>
       </div>
       <div className="mx-auto">
@@ -53,9 +62,7 @@ function ExchangeTrade() {
         </div>
         <div className="flex flex-1 flex-col sm:gap-3">
           <p className="font-light">-</p>
-          <p className="font-bold text-lg cursor-pointer whitespace-nowrap">
-            Select currency (drop)
-          </p>
+          <Dropdown title="Select Currency" items={["BNB", "BUSD", "WBNB"]} />
         </div>
       </div>
       <div className="flex flex-col gap-3">
