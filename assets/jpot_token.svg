@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="93.646" viewBox="0 0 84 93.646">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00fae3"/>
+      <stop offset="1" stop-color="#007d72"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_16149" data-name="Group 16149" transform="translate(-851 -892.342)">
+    <g id="Group_16148" data-name="Group 16148" transform="translate(861 893)">
+      <path id="Path_13190" data-name="Path 13190" d="M148.52,775.241a31.53,31.53,0,0,1-6.116,18.711,33.044,33.044,0,0,1-6.839,6.839h-.052l-11.846-11.846.026-.026,6.839-6.839,4.9,4.9a21.942,21.942,0,0,0,3.407-11.742c0-.465-.026-.929-.052-1.394a21.468,21.468,0,0,0-3.355-10.323l-11.717,11.742-6.839,6.839-.026.026L98.221,763.5a21.819,21.819,0,0,0-3.329,10.349c-.026.465-.052.929-.052,1.394a21.719,21.719,0,0,0,3.407,11.742l4.9-4.9,6.839,6.839.026.026L98.169,800.791h-.052a33.046,33.046,0,0,1-6.839-6.839,31.706,31.706,0,0,1-6.116-18.711,31.305,31.305,0,0,1,1.5-9.626,31.626,31.626,0,0,1,4.62-9.058V756.5a33.046,33.046,0,0,1,6.839-6.839l6.968,6.968L116.854,768.4,128.6,756.634l6.968-6.968A33.045,33.045,0,0,1,142.4,756.5v.052a30.986,30.986,0,0,1,4.62,9.058A31.306,31.306,0,0,1,148.52,775.241Z" transform="translate(-85.162 -749.666)" fill="url(#linear-gradient)"/>
+      <path id="Path_13191" data-name="Path 13191" d="M101.974,769.065l.026.026-4.878,4.878h-.052a22.175,22.175,0,0,1-6.839-6.839l4.9-4.9Z" transform="translate(-77.148 -729.812)" fill="url(#linear-gradient)"/>
+      <path id="Path_13192" data-name="Path 13192" d="M106.947,762.226l4.9,4.9a22.175,22.175,0,0,1-6.839,6.839h-.052l-4.878-4.878.026-.026Z" transform="translate(-61.577 -729.812)" fill="url(#linear-gradient)"/>
+      <path id="Path_13193" data-name="Path 13193" d="M127.437,759.205v.052L115.72,771l-6.839,6.839-.026.026L90.222,759.231l.026-.026a22.171,22.171,0,0,1,6.839-6.839l11.768,11.768L120.6,752.366A22.172,22.172,0,0,1,127.437,759.205Z" transform="translate(-77.163 -745.398)" fill="url(#linear-gradient)"/>
+      <path id="Union_2" data-name="Union 2" d="M30.2,32.414l-.026.026L23.33,25.6l.026-.026h0L4.619,6.838A33.047,33.047,0,0,1,11.458,0l6.969,6.969L30.2,18.736,41.937,6.969,48.905,0a33.017,33.017,0,0,1,6.839,6.838l-6.968,6.968L37.033,25.575l.026.026L30.22,32.44ZM48.776,13.859l6.968-6.968a31,31,0,0,1,4.62,9.058l-8.233,8.232A21.453,21.453,0,0,0,48.776,13.859ZM0,15.948A31.623,31.623,0,0,1,4.619,6.891l6.942,6.942a21.8,21.8,0,0,0-3.33,10.348Z" transform="translate(1.497 0)" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#linear-gradient)"/>
+      <path id="Path_13195" data-name="Path 13195" d="M118.8,774.1a33.049,33.049,0,0,1-6.839,6.839L105,773.969l-4.9-4.9,6.839-6.839Z" transform="translate(-61.561 -729.812)" fill="url(#linear-gradient)"/>
+      <path id="Path_13196" data-name="Path 13196" d="M99.4,762.226l6.839,6.839-4.9,4.9-6.968,6.968a33.048,33.048,0,0,1-6.839-6.839Z" transform="translate(-81.416 -729.812)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="Jpot" transform="translate(851 978.988)" fill="#00fae3" font-size="27" font-family="Sans-serif, Montserrat-Black, Montserrat" font-weight="800" letter-spacing="0.1em"><tspan x="0" y="0">JPOT</tspan></text>
+  </g>
+</svg>
