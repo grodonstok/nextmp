@@ -1,6 +1,6 @@
 function farms() {
 	return (
-		<div>
+		<div className="flex flex-col sm:flex-row gap-10 sm:gap-20 w-full">
 			
 		</div>
 	)

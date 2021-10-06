@@ -8,7 +8,7 @@ function SidebarItem({ title, Icon, page, Image, ImageActive }) {
   return (
     <Link href={page} className="flex items-center">
       <span
-        className={`flex cursor-pointer group ${active} bg-opacity-50 transition-all font-bold text-lg sm:px-5 py-3 rounded-2xl`}
+        className={`flex cursor-pointer group ${active} bg-opacity-50 transition-all font-bold text-lg sm:pl-5 sm:px-5 pl-5  py-3 rounded-2xl`}
       >
         {Icon ? (
           <Icon className="w-6 mr-5" />

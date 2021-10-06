@@ -50,12 +50,6 @@ function trade() {
           <div className="flex flex-col gap-6">
             <h3 className="font-bold text-xl">Recent transactions</h3>
 						<TransactionsTrade />
-            {/* <div className="flex justify-center bg-[#2A3A5F] rounded-2xl p-3 gap-2 whitespace-nowrap">
-              <span className="font-light">Swap</span>
-              <span className="font-bold">1990000 CATE</span>
-              <span className="font-light">for</span>
-              <span className="font-bold">950 BUSD</span>
-            </div> */}
           </div>
           <div className="w-full h-0.5 bg-[#161C31] bg-opacity-50"></div>
           <div className="flex flex-col gap-6">

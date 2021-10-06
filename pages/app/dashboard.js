@@ -33,6 +33,29 @@ function dashboard() {
             </div>
           </div>
         </div>
+				<div className="card w-full flex flex-col gap-3">
+          <div className="uppercase font-semibold tracking-wide text-xl">
+            global stats
+          </div>
+          <div className="flex flex-col sm:flex-row gap-6 w-full">
+            <div className="flex flex-col flex-1 gap-2 sm:gap-3">
+              <p>Token Value Locked (TVL)</p>
+              <p className="font-bold">100.00 $</p>
+              <div className="flex gap-2">
+                <span className="text-xs text-[#00FAE3]">+50.00%</span>
+                <img className="w-5" src={green_path} />
+              </div>
+            </div>
+            <div className="flex flex-col flex-1 gap-2 sm:gap-3">
+              <p>POT price</p>
+              <p className="font-bold">30.00 $</p>
+              <div className="flex gap-2">
+                <span className="text-xs text-[#F78585]">-50.00%</span>
+                <img className="w-5" src={red_path} />
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="flex flex-col sm:flex-row gap-10 sm:gap-20 w-full">
           <div className="card flex flex-col items-center gap-6 flex-grow">
             <div className="flex flex-col items-center gap-3">
