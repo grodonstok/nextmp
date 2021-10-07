@@ -6,7 +6,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Dropdown({ title, items }) {
+export default function Dropdown({ title, items, change }) {
   const [selected, setSelected] = useState(null);
   return (
     <Menu as="div" className="relative inline-block text-left">
@@ -31,11 +31,11 @@ export default function Dropdown({ title, items }) {
       >
         <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
-            {items.map((i) => (
-              <Menu.Item>
+            {items.map((i, index) => (
+              <Menu.Item key={index}>
                 {({ active }) => (
                   <div
-										onClick={() => setSelected(i)}
+                    onClick={change ? change : () => setSelected(i)}
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                       "block px-4 py-2 text-sm uppercase"

@@ -1,9 +1,12 @@
-function ConnectButton() {
-	return (
-		<button className="w-full bg-[#00FAE3] text-[#161C31] font-semibold rounded-2xl p-2">
-			Connect
-		</button>
-	)
+function ConnectButton({ title, classes, connect }) {
+  return (
+    <button
+      className={`${classes} bg-[#00FAE3] text-[#161C31] font-semibold rounded-2xl cursor-pointer`}
+      onClick={connect}
+    >
+      {title}
+    </button>
+  );
 }
 
-export default ConnectButton
+export default ConnectButton;
