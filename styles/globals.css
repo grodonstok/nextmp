@@ -9,5 +9,5 @@
 }
 
 .card {
-	@apply bg-gradient-to-b from-[#2A3A5F] to-[#1A2539] rounded-3xl overflow-hidden p-8 sm:p-10
+	@apply bg-gradient-to-b from-[#2A3A5F] to-[#1A2539] text-[#C9D5F8] rounded-3xl overflow-hidden p-8 sm:p-10
 }
