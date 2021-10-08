@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function MobileNav({ setMobileSide }) {
   return (
-    <div className="flex sm:flex-grow-0 justify-between sm:hidden">
+    <div className="flex fixed top-0 left-0 right-0 p-6 bg-[#161C31] z-20 sm:flex-grow-0 justify-between sm:hidden">
       <MenuIcon className="w-8" onClick={() => setMobileSide(true)} />
       <Link href="/app" className="flex items-center">
         <img className="w-8" src={moneypot_logo_mobile} />

@@ -1,24 +1,38 @@
+import { useState } from "react";
 import binance_1 from "../assets/binance_1.svg";
 import binance_2 from "../assets/binance_2.svg";
+import StakeModal from "./StakeModal";
 
-function Contract({ type }) {
+function Contract({ token, type, jpot }) {
+  const [approved, setApproved] = useState(false);
+  const [modal, showModal] = useState(false);
+
   return (
     <div className="card flex flex-col sm:flex-row gap-10 justify-between ">
+      {modal ? (
+        <StakeModal showModal={showModal} token={token} balance={0.31234} />
+      ) : (
+        ""
+      )}
       <div className="flex flex-col gap-6 sm:w-1/5 sm:my-auto">
         <div className="flex flex-col items-center gap-2 px-5">
           <div className="flex flex-row justify-center gap-5">
             <img className="w-10" src={binance_1} />
             {type === "farm" ? <img className="w-10" src={binance_2} /> : ""}
           </div>
-          <p className="text-xl text-[#F0B90A] font-bold">
-            {type === "farm" ? "RADS-BUSD LP" : "BNB"}
+          <p className="text-xl text-[#F0B90A] font-bold whitespace-nowrap">
+            {token}
           </p>
           <p className="text-xs font-light">Earn POT rewards</p>
         </div>
         <div className="flex flex-col gap-4">
-          {/* <div className="w-full rounded-2xl border-2 border-[#C9D5F8] p-1.5 font-semibold text-center">
-						JPOT
-					</div> */}
+          {jpot ? (
+            <div className="w-full rounded-2xl border-2 border-[#C9D5F8] p-1.5 font-semibold text-center">
+              JPOT
+            </div>
+          ) : (
+            ""
+          )}
           <div className="w-full rounded-2xl border-2 border-[#C9D5F8] p-1.5 font-semibold text-center">
             0X
           </div>
@@ -52,19 +66,32 @@ function Contract({ type }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 my-auto">
+      <div className="flex flex-col gap-6 sm:w-1/5 my-auto">
         <button className="rounded-2xl border-2 border-[#C9D5F8] p-1.5 font-semibold text-center">
           Harvest
         </button>
-        <button className="rounded-2xl bg-[#00FAE3] text-[#161C31] p-1.5 px-7 font-semibold text-center">
-          Approve Contract
-        </button>
-        {/* <button className="rounded-2xl bg-[#00FAE3] text-[#161C31] p-1.5 px-7 font-semibold text-center">
-          Stake
-        </button>
-				<button className="rounded-2xl border-2 border-[#C9D5F8] p-1.5 font-semibold text-center">
-          Withdraw
-        </button> */}
+        {!approved ? (
+          <button
+            className="rounded-2xl bg-[#00FAE3] text-[#161C31] p-1.5 px-7 font-semibold text-center"
+            onClick={() => setApproved(true)}
+          >
+            Approve Contract
+          </button>
+        ) : (
+          <button
+            className="rounded-2xl bg-[#00FAE3] text-[#161C31] p-1.5 px-7 font-semibold text-center"
+            onClick={() => showModal(true)}
+          >
+            Stake
+          </button>
+        )}
+        {approved ? (
+          <button className="rounded-2xl border-2 border-[#C9D5F8] p-1.5 font-semibold text-center">
+            Withdraw
+          </button>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

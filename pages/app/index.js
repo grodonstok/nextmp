@@ -2,6 +2,7 @@ import Head from "next/head";
 import moneypot_home from "../../assets/moneypot_home.svg";
 import moneypot_home_mobile from "../../assets/moneypot_home_mobile.svg";
 import Account from "../../components/Account";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,9 +25,11 @@ export default function Home() {
               title="Connect wallet"
               classes="flex-grow px-5 py-2 z-20"
             />
-            <button className="flex-grow border border-[#00FAE3] rounded-2xl px-3 py-2 text-[#00FAE3]">
-              Trade now
-            </button>
+            <Link href="/app/trade">
+              <button className="flex-grow border border-[#00FAE3] rounded-2xl px-3 py-2 text-[#00FAE3] z-20">
+                Trade now
+              </button>
+            </Link>
           </div>
         </div>
         <img

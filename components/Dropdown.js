@@ -8,6 +8,12 @@ function classNames(...classes) {
 
 export default function Dropdown({ title, items, change }) {
   const [selected, setSelected] = useState(null);
+
+  const onChange = (s) => {
+    setSelected(s);
+    change(s);
+  };
+
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
@@ -29,16 +35,16 @@ export default function Dropdown({ title, items, change }) {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-[#2A3A5F] ring-2 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             {items.map((i, index) => (
               <Menu.Item key={index}>
                 {({ active }) => (
                   <div
-                    onClick={change ? change : () => setSelected(i)}
+                    onClick={() => onChange(i)}
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm uppercase"
+                      active ? " text-[#00FAE3]" : "",
+                      "block px-4 py-2 text-sm uppercase cursor-pointer transition-all"
                     )}
                   >
                     {i}
