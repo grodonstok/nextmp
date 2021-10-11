@@ -4,10 +4,10 @@ import gray_path from "../../assets/gray_path.svg";
 
 function myshares() {
   return (
-    <div className="flex flex-col gap-10 sm:gap-20 w-full">
+    <div className="flex flex-col gap-10 xl:gap-20 w-full">
       <div className="card flex flex-col gap-8">
         <h3 className="uppercase text-2xl font-bold">Daily money pot</h3>
-        <div className="flex flex-col sm:flex-row gap-8 justify-between">
+        <div className="flex flex-col xl:flex-row gap-8 justify-between">
           <div className="flex flex-col gap-2">
             <p className="">Total</p>
             <p className="font-bold">$ 0.000</p>
@@ -45,7 +45,7 @@ function myshares() {
           The next money pot will start being distributed at block #7820234
         </div>
       </div>
-      <div className="flex flex-col-reverse sm:flex-row gap-10 sm:gap-20">
+      <div className="flex flex-col-reverse xl:flex-row gap-10 xl:gap-20">
         <div className="card flex flex-col gap-8">
           <h3 className="uppercase text-2xl font-bold">JPOT</h3>
           <div className="flex flex-col sm:flex-row gap-10 justify-between">
@@ -123,7 +123,7 @@ function myshares() {
       </div>
       <div className="card flex flex-col gap-8">
         <h3 className="">Swap</h3>
-        <div className="flex flex-col sm:flex-row gap-8 sm:gap-16">
+        <div className="flex flex-col xl:flex-row gap-8 xl:gap-16">
           <div className="bg-[#2A3A5F] rounded-2xl px-8 py-6 flex flex-col sm:flex-row gap-6 font-bold flex-grow">
             <div className="flex justify-between flex-1">
               <p className="my-auto">0</p>
