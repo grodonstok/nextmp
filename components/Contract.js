@@ -8,13 +8,13 @@ function Contract({ token, type, jpot }) {
   const [modal, showModal] = useState(false);
 
   return (
-    <div className="card flex flex-col sm:flex-row gap-10 justify-between ">
+    <div className="card flex flex-col xl:flex-row gap-10 justify-between ">
       {modal ? (
         <StakeModal showModal={showModal} token={token} balance={0.31234} />
       ) : (
         ""
       )}
-      <div className="flex flex-col gap-6 sm:w-1/5 sm:my-auto">
+      <div className="flex flex-col gap-6 xl:w-1/5 xl:my-auto">
         <div className="flex flex-col items-center gap-2 px-5">
           <div className="flex flex-row justify-center gap-5">
             <img className="w-10" src={binance_1} />
@@ -38,7 +38,7 @@ function Contract({ token, type, jpot }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-5 sm:gap-0 sm:w-1/3 justify-between">
+      <div className="flex flex-row gap-5 xl:gap-0 xl:w-1/3 justify-between">
         <div className="flex flex-col justify-between">
           <div className="flex flex-col sm:items-center gap-2">
             <p className="text-lg">APR</p>
@@ -66,13 +66,13 @@ function Contract({ token, type, jpot }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 sm:w-1/5 my-auto">
+      <div className="flex flex-col gap-6 xl:w-1/5 my-auto">
         <button className="rounded-2xl border-2 border-[#C9D5F8] p-1.5 font-semibold text-center">
           Harvest
         </button>
         {!approved ? (
           <button
-            className="rounded-2xl bg-[#00FAE3] text-[#161C31] p-1.5 px-7 font-semibold text-center"
+            className="rounded-2xl bg-[#00FAE3] text-[#161C31] p-1.5 2xl:px-7 xl:px-4 font-semibold text-center whitespace-nowrap"
             onClick={() => setApproved(true)}
           >
             Approve Contract

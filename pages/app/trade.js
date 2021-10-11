@@ -9,7 +9,7 @@ function trade() {
   const [deadline, setDeadline] = useState(200);
 
   return (
-    <div className="flex flex-col sm:flex-row gap-10 sm:gap-20 w-full">
+    <div className="flex flex-col xl:flex-row gap-10 2xl:gap-20 w-full">
       <div className="flex-1 flex">
         <div className="card w-full flex flex-col gap-10">
           <div className="flex flex-col gap-3">
@@ -59,21 +59,21 @@ function trade() {
             <h3 className="font-bold text-xl">Settings</h3>
             <div className="flex flex-col bg-[#2A3A5F] p-10 rounded-2xl gap-4">
               <p className="font-light">Slippage tolerance:</p>
-              <div className="flex gap-5 font-bold text-center">
+              <div className="flex flex-row flex-wrap gap-5 font-bold text-center">
                 <div
-                  className="px-5 py-2 rounded-2xl bg-[#00FAE3] text-[#2A3A5F] cursor-pointer"
+                  className="px-5 flex-1 py-2 rounded-2xl bg-[#00FAE3] text-[#2A3A5F] cursor-pointer"
                   onClick={() => setSlippage(0.1)}
                 >
                   0.1%
                 </div>
                 <div
-                  className="px-5 py-2 rounded-2xl bg-[#00FAE3] bg-opacity-20 cursor-pointer"
+                  className="px-5 flex-1 py-2 rounded-2xl bg-[#00FAE3] bg-opacity-20 cursor-pointer"
                   onClick={() => setSlippage(0.5)}
                 >
                   0.5%
                 </div>
                 <div
-                  className="px-5 py-2 rounded-2xl bg-[#00FAE3] bg-opacity-20 cursor-pointer"
+                  className="px-5 flex-1 py-2 rounded-2xl bg-[#00FAE3] bg-opacity-20 cursor-pointer"
                   onClick={() => setSlippage(1)}
                 >
                   1%
