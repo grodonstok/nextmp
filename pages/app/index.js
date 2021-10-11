@@ -11,7 +11,7 @@ export default function Home() {
         <title>MoneyPot</title>
       </Head>
       <div className="relative h-full pt-10 sm:pt-0">
-        <div className="p-6 sm:p-28 flex flex-col w-full sm:w-2/3 space-y-8 z-20">
+        <div className="p-6 xl:p-28 sm:p-16 flex flex-col w-full xl:w-2/3 space-y-8 z-20">
           <h1 className="text-[#00FAE3] font-semibold text-3xl sm:text-6xl leading-snug">
             The moon is made <br />
             of Moneypot.
@@ -37,7 +37,7 @@ export default function Home() {
           src={moneypot_home}
         />
         <img
-          className="block sm:hidden absolute bottom-0 right-0 left-0 z-10"
+          className="block w-full sm:hidden absolute bottom-0 right-0 left-0 z-10"
           src={moneypot_home_mobile}
         />
       </div>
