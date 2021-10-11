@@ -20,20 +20,20 @@ import Account from "./Account";
 function Sidebar({ mobileSide, setMobileSide }) {
   return (
     <>
-      <MobileNav setMobileSide={setMobileSide} />
+      <MobileNav setMobileSide={setMobileSide} route="/app" />
       <div
         className={`${
-          mobileSide ? "left-0" : "-left-96"
-        } sm:-left-0 fixed z-30 sm:my-16 top-0 bottom-0 w-2/3 sm:w-1/6 sm:relative transition-all ease-in`}
+          mobileSide ? "left-0 block" : "-left-full "
+        } md:-left-0 fixed z-30 md:my-0 xl:my-16 top-0 bottom-0 sm:w-2/4 w-2/3 md:w-2/6 xl:w-1/6 md:relative transition-all ease-in`}
       >
-        <div className="flex flex-col h-full sm:h-auto sm:relative items-start sm:items-center space-y-5 sm:space-y-0 gap-10 sm:gap-32 sm:justify-between bg-gradient-to-b from-[#2A3A5F] to-[#1A2539] rounded-r-3xl sm:rounded-3xl p-6 sm:p-12">
-          <div className="hidden sm:block">
+        <div className="flex flex-col h-full md:h-auto md:relative items-start md:items-center space-y-5 md:space-y-0 gap-10 lg:gap-32 md:gap-20 md:justify-between bg-gradient-to-b from-[#2A3A5F] to-[#1A2539] rounded-r-3xl md:rounded-3xl py-6 px-3 md:px-6 2xl:px-8">
+          <div className="hidden md:block">
             <img src={moneypot_logo} />
           </div>
-          <div className="sm:hidden ml-auto">
+          <div className="md:hidden ml-auto">
             <XIcon className="w-6" onClick={() => setMobileSide(false)} />
           </div>
-          <div className="space-y-5 sm:space-y-8 w-full">
+          <div className="space-y-5 md:space-y-8 w-full">
             <SidebarItem
               title="Home"
               Image={icon_home}
